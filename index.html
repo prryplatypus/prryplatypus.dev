@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Néstor Pérez | prryplatypus" />
-    <meta property="og:image" content="./prryplatypus.svg" />
+    <meta property="og:image" content="./prryplatypus.jpg" />
+    <link rel="icon" type="image/jpg" href="./prryplatypus.jpg">
     <title>Néstor Pérez | prryplatypus</title>
     <link
         rel="stylesheet"
@@ -28,6 +29,13 @@
             background-color: var(--platypus-blue);
             font-family: 'Courier New', Courier, monospace;
         }
+        .fullname {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 0;
+            margin-top: 30px;
+            text-align: center;
+        }
         .profile-icon {
             max-height: 200px;
             max-width: 200px;
@@ -36,6 +44,7 @@
             margin: 0;
             margin-top: 15px;
             border-bottom: 2px solid transparent;
+            text-align: center;
             text-decoration: none;
             color: black;
         }
@@ -46,15 +55,13 @@
         }
         .social-icon {
             vertical-align: middle;
-        }
-        .social-username {
-            font-weight: bold;
+            font-size: 25px;
         }
         .socials {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 30px;
         }
         .wrapper {
@@ -71,14 +78,17 @@
 <body>
     <div class="wrapper">
         <img class="profile-icon" src="./prryplatypus.svg" alt="Profile picture"/>
+        <p class="fullname">
+            Néstor Pérez
+        </p>
         <div class="socials">
             <a href="https://github.com/prryplatypus" target="_blank" class="social-detail">
                 <span class="fa-brands fa-github social-icon" aria-hidden="true"></span>
-                <span class="social-username">prryplatypus</span>
+                <span>prryplatypus</span>
             </a>
             <a href="https://twitter.com/prryplatypus" class="social-detail">
                 <span class="fa-brands fa-twitter social-icon" aria-hidden="true"></span>
-                <span class="social-username">prryplatypus</span>
+                <span>prryplatypus</span>
             </a>
         </div>
     </div>
