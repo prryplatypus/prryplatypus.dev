@@ -10,12 +10,25 @@ body {
 
 body {
     min-height: 100vh;
-    min-width: 100vw;
-    background-color: var(--platypus-blue);
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.fullname {
+.main-section {
+    align-content: center;
+    background-color: var(--platypus-blue);
+    display: grid;
+    justify-items: center;
+    min-height: calc(100vh - 20px);
+    padding: 10px;
+}
+
+.main-section > .profile-picture {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.main-section > .name {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 0;
@@ -23,11 +36,14 @@ body {
     text-align: center;
 }
 
-.profile-icon {
-    max-height: 200px;
-    max-width: 200px;
+.main-section > .socials {
+    display: grid;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-.social-detail {
+
+.socials > .social-detail {
     margin: 0;
     margin-top: 15px;
     border-bottom: 2px solid transparent;
@@ -35,28 +51,27 @@ body {
     text-decoration: none;
     color: black;
 }
-.social-detail:hover {
+
+.socials > .social-detail:hover {
     border-bottom: 2px solid black;
     cursor: pointer;
     margin-bottom: 0;
 }
-.social-icon {
+
+.social-detail > .social-icon {
     vertical-align: middle;
     font-size: 25px;
 }
-.socials {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 10px;
-    font-size: 30px;
+
+.social-detail > .social-username {
+    display:inline;
 }
-.wrapper {
-    min-height: 100vh;
-    height: 100%;
+
+
+#particles-js {
+    position: fixed;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    background-color: transparent;
+    pointer-events: none;
 }
