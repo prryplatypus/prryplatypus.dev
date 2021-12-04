@@ -1,5 +1,8 @@
 :root {
+    --xmas-green: #002b0f;
+    --light-gray: #eeeeee;
     --platypus-blue: #01b8c8;
+    --dark-platypus-blue: #006b77;
 }
 
 html,
@@ -9,62 +12,88 @@ body {
 }
 
 body {
+    background-color: var(--xmas-green);
     min-height: 100vh;
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .main-section {
-    align-content: center;
-    background-color: var(--platypus-blue);
+    align-items: center;
     display: grid;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.profile-card {
+    background: white;
+    box-shadow: -5px -5px var(--dark-platypus-blue);
+    display: grid;
+    height: fit-content;
     justify-items: center;
-    min-height: calc(100vh - 20px);
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 0;
+    z-index: 1;
+}
+
+.profile-card hr {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.profile-card .profile-picture {
+    background: var(--platypus-blue);
+    border-radius: 100px;
+    max-height: 150px;
+    max-width: 150px;
     padding: 10px;
 }
 
-.main-section > .profile-picture {
-    max-height: 200px;
-    max-width: 200px;
-}
-
-.main-section > .name {
+.profile-card .name {
     font-size: 50px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin-bottom: 0;
-    margin-top: 30px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
 }
 
-.main-section > .socials {
-    display: grid;
-    font-size: 30px;
+.profile-card .socials {
+    /*column-gap: 15px;*/
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    /*grid-template-columns: auto auto;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 10px;*/
+    width: 100%;
 }
 
-.socials > .social-detail {
-    margin: 0;
-    margin-top: 15px;
+.profile-card .socials .social-detail {
     border-bottom: 2px solid transparent;
+    color: black;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    padding-top: 15px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    width: 50%;
 }
 
-.socials > .social-detail:hover {
-    border-bottom: 2px solid black;
+.profile-card .socials .social-detail:hover {
+    border-bottom: 2px solid var(--dark-platypus-blue);
     cursor: pointer;
     margin-bottom: 0;
 }
 
-.social-detail > .social-icon {
+.profile-card .socials .social-icon {
     vertical-align: middle;
-    font-size: 25px;
-}
-
-.social-detail > .social-username {
-    display:inline;
+    font-size: 30px;
 }
 
 
