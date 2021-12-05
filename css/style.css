@@ -18,21 +18,30 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.section {
+    display: flex;
+    min-height: 95vh;
+}
+
 .main-section {
     align-items: center;
-    display: grid;
-    min-height: 100vh;
     justify-content: center;
 }
 
+.info-section {
+    background-color: var(--xmas-green);
+}
+
 .profile-card {
-    background: white;
-    box-shadow: -5px -5px var(--dark-platypus-blue);
-    display: grid;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
     height: fit-content;
     justify-items: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 1rem;
+    padding: 1rem;
     padding-bottom: 0;
     z-index: 1;
 }
@@ -40,62 +49,52 @@ body {
 .profile-card hr {
     width: 100%;
     margin-bottom: 0;
-    margin-top: 5px;
+    margin-top: .5rem;
 }
 
 .profile-card .profile-picture {
-    background: var(--platypus-blue);
-    border-radius: 100px;
-    max-height: 150px;
-    max-width: 150px;
-    padding: 10px;
+    /*background: var(--platypus-blue);*/
+    max-height: 8rem;
+    max-width: 8rem;
+    /*padding: 10px;*/
+}
+
+.profile-card p {
+    margin: 0.3rem;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .profile-card .name {
-    font-size: 50px;
-    /*font-weight: bold;*/
-    margin-bottom: 0;
-    margin-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
+    font-size: 2.5rem;
+}
+
+.profile-card .description {
+    font-size: 1.2rem;
 }
 
 .profile-card .socials {
-    /*column-gap: 15px;*/
+    column-gap: 1rem;
     display: flex;
     flex-wrap: wrap;
-    font-size: 40px;
-    /*grid-template-columns: auto auto;
-    margin-bottom: 10px;
-    margin-top: 10px;*/
-    width: 100%;
+    justify-content: center;
 }
 
-.profile-card .socials .social-detail {
-    border-bottom: 2px solid transparent;
+.profile-card .socials .social-link {
     color: black;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10px;
-    padding-top: 15px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0rem;
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
-    width: 50%;
-}
-
-.profile-card .socials .social-detail:hover {
-    border-bottom: 2px solid var(--dark-platypus-blue);
-    cursor: pointer;
-    margin-bottom: 0;
-}
-
-.profile-card .socials .social-icon {
     vertical-align: middle;
-    font-size: 30px;
 }
 
+.profile-card .socials .social-link:hover {
+    color: var(--dark-platypus-blue);
+}
 
 #particles-js {
     position: fixed;
