@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 :root {
-    --xmas-green: #002b0f;
-    --light-gray: #eeeeee;
+    --bg-main: #50e0ee;
+    --bg-primary: #fff;
+    --bg-secondary: #eeeeee;
+    --bg-not-quite-white: #eee;
     --platypus-blue: #01b8c8;
     --dark-platypus-blue: #006b77;
+    --page-max-width: 1000px;
+    --section-spacing: 120px;
 }
 
 html,
@@ -12,7 +18,9 @@ body {
 }
 
 body {
-    background-color: var(--xmas-green);
+    /*background-color: var(--xmas-green);*/
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
@@ -20,29 +28,46 @@ body {
 
 .section {
     display: flex;
-    min-height: 100vh;
-}
-
-.main-section {
-    align-items: center;
     justify-content: center;
+    padding-bottom: var(--section-spacing);
+    padding-top: var(--section-spacing);
 }
 
-.info-section {
-    background-color: var(--xmas-green);
+.section:nth-of-type(even) {
+    background-color: var(--bg-white);
+}
+
+.section:nth-of-type(odd) {
+    background-color: var(--bg-not-quite-white);
+}
+
+/* Top section */
+.section:first-child {
+    background-color: var(--bg-main);
+}
+
+.section .content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: var(--page-max-width);
+    width: 100%;
+}
+
+.section .content h2.title {
+    font-size: 4rem;
+    font-family: 'Luckiest Guy', cursive;
+    margin-bottom: 2rem;
+    margin-top: 0;
 }
 
 .profile-card {
     align-items: center;
-    background-color: #fff;
+    /*background-color: #fff;*/
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     height: fit-content;
     justify-items: center;
-    margin: 1rem;
-    padding: 1rem;
-    padding-bottom: 0;
     z-index: 1;
 }
 
@@ -61,7 +86,6 @@ body {
 
 .profile-card p {
     margin: 0.3rem;
-    margin-bottom: 0;
     text-align: center;
 }
 
@@ -93,7 +117,7 @@ body {
 }
 
 .profile-card .socials .social-link:hover {
-    color: var(--dark-platypus-blue);
+    color: var(--platypus-blue);
 }
 
 #particles-js {
