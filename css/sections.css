@@ -1,0 +1,53 @@
+.section {
+    display: flex;
+    display: none;
+    justify-content: center;
+    padding-bottom: var(--section-spacing);
+    padding-top: var(--section-spacing);
+}
+
+/* Even sections */
+/*.section:nth-of-type(even) {
+    background-color: var(--bg-primary);
+}*/
+
+/* Odd sections */
+/*.section:nth-of-type(odd) {
+    background-color: var(--bg-primary-bis);
+}*/
+
+/* First section (main) */
+.section:first-child {
+    align-items: center;
+    background-color: var(--ldg-section-background);
+    color: var(--ldg-section-font);
+    display: flex;
+    min-height: 100vh;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+/* Links on first section */
+.section:first-child a {
+    color: inherit;
+}
+
+.section:first-child a:hover {
+    color: var(--ldg-section-font-hover);
+}
+
+/* Section content */
+/*.section .content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: var(--page-max-width);
+    width: 100%;
+}*/
+
+/* Section content titles */
+/*.section .content h2.title {
+    font-size: 4rem;
+    font-family: 'Luckiest Guy', cursive;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}*/

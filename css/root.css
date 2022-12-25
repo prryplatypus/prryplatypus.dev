@@ -1,0 +1,37 @@
+:root {
+    --ldg-section-background: #fff;
+    --ldg-section-font: #23272a;
+    --ldg-section-font-hover: #464e53;
+
+    /*--bg-primary: #fff;
+    --bg-primary-bis: #eee;
+    --font-primary: #23272a;
+    --platypus-blue: #01b8c8;
+    --platypus-blue-font-color: #fff;
+    --platypus-blue-font-hover: #add8e6;*/
+    --page-max-width: 1000px;
+    --section-spacing: 120px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ldg-section-background: #000;
+        --ldg-section-font: #fff;
+        --ldg-section-font-hover: #bbb;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*color: var(--font-primary);*/
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    min-height: 100vh;
+    width: 100%;
+}
