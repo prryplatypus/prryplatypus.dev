@@ -15,7 +15,7 @@
         goto("/timer");
     }
 
-    const exam = getExam($page.params.exam_id);
+    const exam = getExam(exam_id);
     if (exam === null && browser) {
         goto("/timer");
     }
