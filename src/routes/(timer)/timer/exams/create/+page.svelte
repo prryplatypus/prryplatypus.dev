@@ -24,7 +24,6 @@
 
 <svelte:head>
     <title>Exams timer - Create exam</title>
-    <meta name="description" content="Exams timer - Create exam" />
 </svelte:head>
 
 <main>

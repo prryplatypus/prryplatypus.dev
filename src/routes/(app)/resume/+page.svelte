@@ -32,7 +32,7 @@
             role: "Junior Software Engineer",
             description: [
                 `Part of the core development team. Worked on network-oriented APIs and all the shenanigans that make it work, like asynchronous `,
-                `tasks, message queues, and data storage. Additionally, I reworked the CI flows and the image build and deployment processes. `,
+                `task workers, message queues, and data storage. Additionally, I reworked the CI flows and the image build and deployment processes. `,
                 `Provided customer-centric support with any development-related issues.`,
             ].join(""),
         },
@@ -89,7 +89,7 @@
 
 <svelte:head>
     <title>My Resume</title>
-    <meta name="description" content="Néstor Pérez - Resume" />
+    <meta name="description" content="Have a look at my resume" />
 </svelte:head>
 
 <section>

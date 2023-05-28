@@ -40,7 +40,6 @@
 
 <svelte:head>
     <title>Exams timer - Edit exam</title>
-    <meta name="description" content="Exams timer - Edit exam" />
 </svelte:head>
 
 <main>

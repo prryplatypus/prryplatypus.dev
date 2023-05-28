@@ -4,7 +4,7 @@
 
 <svelte:head>
 	<title>Hello, I'm Néstor 👋</title>
-	<meta name="description" content="Néstor Pérez - About me" />
+	<meta name="description" content="Welcome to my website" />
 </svelte:head>
 
 <section>

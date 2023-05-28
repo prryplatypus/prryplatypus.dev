@@ -2,11 +2,6 @@
     import Clock from "$lib/components/Timer/Clock.svelte";
 </script>
 
-<svelte:head>
-    <title>Exams timer - Good luck!</title>
-    <meta name="description" content="Exams timer - Good luck!" />
-</svelte:head>
-
 <header>
     <div class="clock">
         <Clock />

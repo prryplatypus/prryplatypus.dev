@@ -9,7 +9,6 @@
 
 <svelte:head>
     <title>Exams timer - Good luck!</title>
-    <meta name="description" content="Exams timer - Good luck!" />
 </svelte:head>
 
 <section class="buttons">
