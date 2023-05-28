@@ -12,8 +12,8 @@
 		<h1>Hello, I'm Néstor 👋</h1>
 		<div class="filler" />
 		<ul>
-			<InternalLink href="/resume">See my resume</InternalLink>
-			<!-- <InternalLink href="/timer">Exams timer</InternalLink> -->
+			<li><InternalLink href="/resume">See my resume</InternalLink></li>
+			<!-- <li><InternalLink href="/timer">Exams timer</InternalLink></li> -->
 		</ul>
 	</div>
 </section>
@@ -42,6 +42,10 @@
 		margin: 0.5em -0.5em;
 	}
 
+	li {
+		margin: 0.5em 0;
+	}
+
 	.filler {
 		background-image: repeating-linear-gradient(
 			-45deg,
@@ -50,9 +54,9 @@
 			currentcolor 8px,
 			currentcolor 10px
 		);
-		padding: 0px;
+		padding: 0;
 		aspect-ratio: 10 / 1;
-		border: 0px none;
+		border: 0 none;
 		display: block;
 		color: inherit;
 	}
