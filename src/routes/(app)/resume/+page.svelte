@@ -2,21 +2,15 @@
     import Article from "$lib/components/Article.svelte";
     import Backlink from "$lib/components/Backlink.svelte";
     import Divider from "$lib/components/Divider.svelte";
+    import ExternalLink from "$lib/components/ExternalLink.svelte";
     import Timeline from "$lib/components/Timeline.svelte";
 
-    function calculateAge(birthday) {
-        var ageDifMs = Date.now() - birthday.getTime();
-        var ageDate = new Date(ageDifMs);
-        return Math.abs(ageDate.getUTCFullYear() - 1970);
-    }
-
-    const age = calculateAge(new Date(Date.parse("2000-06-16")));
     const experience = [
         {
             start_date: new Date(Date.parse("2022-10-01")),
             end_date: null,
             place: "Sanic Framework (OSS project)",
-            place_website: "https://sanicframework.org/",
+            place_website: "https://sanic.dev",
             role: "Steering Council",
             description: [
                 `After being a core developer for a year, I was nominated to join the steering council of the project. The steering council `,
@@ -53,7 +47,7 @@
             start_date: new Date(Date.parse("2021-10-01")),
             end_date: new Date(Date.parse("2022-10-01")),
             place: "Sanic Framework (OSS project)",
-            place_website: "https://sanicframework.org/",
+            place_website: "https://sanic.dev",
             role: "Core Developer",
             description: [
                 `Was invited to join the core developers team after having made several contributions to the project and offering frequent `,
@@ -76,13 +70,13 @@
     ];
     const education = [
         {
-            start_date: new Date(Date.parse("2018-09-01")),
-            end_date: new Date(Date.parse("2022-06-01")),
+            start_date: null,
+            end_date: null,
             place: "U-TAD",
             place_website: "https://u-tad.com",
-            role: "Software Engineering",
+            role: "Bachelor in Software Engineering (Cybersecurity)",
             description:
-                "Graduated with a Bachelor's Degree in Software Engineering with mention/specialisation in Cybersecurity.",
+                "Honours in Introduction to Programming I & II, Introduction to Cybersecurity, Distributed Systems Programming and Networking.",
         },
     ];
 </script>
@@ -102,13 +96,16 @@
             <Divider />
         </div>
         <p>
-            My name is Néstor Pérez and I'm a {age} year old software engineer from
-            Spain. Throughout the past years I've developed software for different
-            places; ranging from volunteer-run organizations to others which provide
-            services to large international companies. Thanks to the experience I've
-            gained at these places, I'm able to write maintainable, future proof
-            and easily-testable code; things that I always set as personal goals
-            when working on any project.
+            I'm an enthusiastic software engineer with proven ability to write
+            maintainable, future proof and easily-testable code, and have
+            demonstrated being a quick-learning engineer and an excellent team
+            player (references available). I excel in any type of coding with
+            Python, but specialize in async API development using frameworks
+            such as <ExternalLink inline={true} href="https://sanic.dev"
+                >Sanic</ExternalLink
+            >. My proudest achievement to date is having reduced an app's
+            execution time from 2h to 15min by converting it to async and making
+            it send concurrent requests.
         </p>
     </div>
     <div class="articles">

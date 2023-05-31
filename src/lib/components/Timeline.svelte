@@ -15,10 +15,14 @@
 <ul>
     {#each items as item}
         <li>
-            <span>
-                {dateToString(item.start_date)} -
-                {dateToString(item.end_date)}
-            </span>
+            {#if item.start_date !== null}
+                <div class="timespan">
+                    <span>
+                        {dateToString(item.start_date)} -
+                        {dateToString(item.end_date)}
+                    </span>
+                </div>
+            {/if}
             <div class="content">
                 <h3>
                     {item.role} @
@@ -45,12 +49,20 @@
         padding: 1em;
     }
 
+    .timespan {
+        margin-bottom: 1.2em;
+    }
+
     span {
         background-color: var(--color-text);
         color: var(--color-bg);
         border-radius: 25px;
         padding: 0.1em 0.5em;
         text-align: center;
+    }
+
+    h3 {
+        margin-top: 0;
     }
 
     p {
