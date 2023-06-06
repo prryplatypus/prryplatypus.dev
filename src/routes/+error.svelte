@@ -1,5 +1,6 @@
 <script>
     import { page } from "$app/stores";
+    import Layout from "./(app)/+layout.svelte";
 </script>
 
 <svelte:head>
@@ -7,10 +8,12 @@
     <meta name="description" content="{$page.status} - {$page.error.message}" />
 </svelte:head>
 
-<div>
-    <h1>{$page.status}</h1>
-    <h3>{$page.error.message}</h3>
-</div>
+<Layout>
+    <div>
+        <h1>{$page.status}</h1>
+        <h3>{$page.error.message}</h3>
+    </div>
+</Layout>
 
 <style>
     div {
