@@ -5,7 +5,6 @@
     import InternalLink from "$lib/components/InternalLink.svelte";
     import Input from "$lib/components/Input.svelte";
     import Label from "$lib/components/Label.svelte";
-    import MetaTags from "$lib/components/MetaTags.svelte";
     import Button from "$lib/components/Button.svelte";
 
     const { addExam } = getContext("exam_state");
@@ -24,7 +23,7 @@
 </script>
 
 <svelte:head>
-    <MetaTags title="Exams timer - Create exam" description="Create an exam" />
+    <title>Exams timer - Create exam</title>
 </svelte:head>
 
 <main>

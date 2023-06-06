@@ -4,7 +4,6 @@
     import Divider from "$lib/components/Divider.svelte";
     import ExternalLink from "$lib/components/ExternalLink.svelte";
     import Timeline from "$lib/components/Timeline.svelte";
-    import MetaTags from "$lib/components/MetaTags.svelte";
 
     const experience = [
         {
@@ -83,7 +82,8 @@
 </script>
 
 <svelte:head>
-    <MetaTags title="My Resume" description="Have a look at my resume" />
+    <title>My Resume</title>
+    <meta name="description" content="Have a look at my resume" />
 </svelte:head>
 
 <section>

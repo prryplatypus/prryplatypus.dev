@@ -1,13 +1,10 @@
 <script>
 	import InternalLink from "$lib/components/InternalLink.svelte";
-	import MetaTags from "$lib/components/MetaTags.svelte";
 </script>
 
 <svelte:head>
-	<MetaTags
-		title="Hello, I'm Néstor 👋"
-		description="Welcome to my website"
-	/>
+	<title>Hello, I'm Néstor 👋</title>
+	<meta name="description" content="Welcome to my website" />
 </svelte:head>
 
 <section>
