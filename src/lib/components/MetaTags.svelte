@@ -21,6 +21,3 @@
 <meta property="twitter:url" content="https://{domain}" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={image} />
-
-<!-- Meta Tags Generated via https://opengraph.dev -->
