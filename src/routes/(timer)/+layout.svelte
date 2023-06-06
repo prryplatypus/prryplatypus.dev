@@ -6,13 +6,6 @@
     setContext("exam_state", examState);
 </script>
 
-<svelte:head>
-    <meta
-        name="description"
-        content="Manage multiple overlapping exams at once"
-    />
-</svelte:head>
-
 <div class="app">
     <Header />
     <slot />

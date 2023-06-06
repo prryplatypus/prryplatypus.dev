@@ -1,11 +1,14 @@
 <script>
     import { page } from "$app/stores";
+    import MetaTags from "$lib/components/MetaTags.svelte";
     import Layout from "./(app)/+layout.svelte";
 </script>
 
 <svelte:head>
-    <title>{$page.status} - {$page.error.message}</title>
-    <meta name="description" content="{$page.status} - {$page.error.message}" />
+    <MetaTags
+        title="{$page.status} - {$page.error.message}"
+        description="{$page.status} - {$page.error.message}"
+    />
 </svelte:head>
 
 <Layout>
