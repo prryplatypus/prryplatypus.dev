@@ -3,12 +3,7 @@
 	import MetaTags from "$lib/components/MetaTags.svelte";
 </script>
 
-<svelte:head>
-	<MetaTags
-		title="Hello, I'm Néstor 👋"
-		description="Welcome to my website"
-	/>
-</svelte:head>
+<MetaTags title="Hello, I'm Néstor 👋" description="Welcome to my website" />
 
 <section>
 	<div class="home">

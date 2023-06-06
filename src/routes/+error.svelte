@@ -4,12 +4,10 @@
     import Layout from "./(app)/+layout.svelte";
 </script>
 
-<svelte:head>
-    <MetaTags
-        title="{$page.status} - {$page.error.message}"
-        description="{$page.status} - {$page.error.message}"
-    />
-</svelte:head>
+<MetaTags
+    title="{$page.status} - {$page.error.message}"
+    description="{$page.status} - {$page.error.message}"
+/>
 
 <Layout>
     <div>

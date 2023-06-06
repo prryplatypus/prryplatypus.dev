@@ -82,9 +82,7 @@
     ];
 </script>
 
-<svelte:head>
-    <MetaTags title="My Resume" description="Have a look at my resume" />
-</svelte:head>
+<MetaTags title="My Resume" description="Have a look at my resume" />
 
 <section>
     <div class="home">

@@ -8,12 +8,10 @@
         getContext("exam_state");
 </script>
 
-<svelte:head>
-    <MetaTags
-        title="Exams timer - Good luck!"
-        description="Manage multiple overlapping exams at once"
-    />
-</svelte:head>
+<MetaTags
+    title="Exams timer - Good luck!"
+    description="Manage multiple overlapping exams at once"
+/>
 
 <section class="buttons">
     <Button on:click={clearExpiredExams}>Clear expired</Button>

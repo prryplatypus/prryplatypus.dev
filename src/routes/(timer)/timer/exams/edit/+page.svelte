@@ -39,9 +39,7 @@
     };
 </script>
 
-<svelte:head>
-    <MetaTags title="Exams timer - Edit exam" description="Edit an exam" />
-</svelte:head>
+<MetaTags title="Exams timer - Edit exam" description="Edit an exam" />
 
 <main>
     <Form title="Edit exam" on:submit={doUpdateExam}>
