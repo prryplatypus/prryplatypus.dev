@@ -2,13 +2,13 @@
     import { getContext } from "svelte";
     import Grid from "./ExamGrid.svelte";
     import Button from "$lib/components/Button.svelte";
-    import MetaTags from "$lib/components/MetaTags.svelte";
+    import PageHead from "$lib/components/PageHead.svelte";
 
     const { exams_store, clearExpiredExams, startPendingExams } =
         getContext("exam_state");
 </script>
 
-<MetaTags
+<PageHead
     title="Exams timer - Good luck!"
     description="Manage multiple overlapping exams at once"
 />

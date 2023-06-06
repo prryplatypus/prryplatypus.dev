@@ -1,9 +1,9 @@
 <script>
 	import InternalLink from "$lib/components/InternalLink.svelte";
-	import MetaTags from "$lib/components/MetaTags.svelte";
+	import PageHead from "$lib/components/PageHead.svelte";
 </script>
 
-<MetaTags title="Hello, I'm Néstor 👋" description="Welcome to my website" />
+<PageHead title="Hello, I'm Néstor 👋" description="Welcome to my website" />
 
 <section>
 	<div class="home">
