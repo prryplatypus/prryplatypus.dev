@@ -5,7 +5,7 @@
     export let image = "/apple-touch-icon.png";
 
     let url = `https://${domain}`;
-    let image_ = `${url}/${image}`;
+    let image_ = `${url}${image}`;
 </script>
 
 <svelte:head>
