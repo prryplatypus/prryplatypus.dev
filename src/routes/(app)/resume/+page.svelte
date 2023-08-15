@@ -3,20 +3,18 @@
     import Backlink from "$lib/components/Backlink.svelte";
     import Divider from "$lib/components/Divider.svelte";
     import ExternalLink from "$lib/components/ExternalLink.svelte";
-    import Timeline from "$lib/components/Timeline.svelte";
     import PageHead from "$lib/components/PageHead.svelte";
+    import Timeline from "$lib/components/Timeline.svelte";
 
     const experience = [
         {
-            start_date: new Date(Date.parse("2022-10-01")),
+            start_date: new Date(Date.parse("2023-07-01")),
             end_date: null,
-            place: "Sanic Framework (OSS project)",
-            place_website: "https://sanic.dev",
-            role: "Steering Council",
+            place: "Ziply Fiber",
+            place_website: "https://ziplyfiber.com",
+            role: "Software Engineer",
             description: [
-                `After being a core developer for a year, I was nominated to join the steering council of the project. The steering council `,
-                `is responsible for accepting, remanding, and rejecting RFCs, enforcing the community code of conduct, administering `,
-                `community assets (such as repositories), and adopting or removing projects from under the community umbrella.`,
+                `Part of the network automation team. Working on internal APIs and tools to automate network operations.`,
             ].join(""),
         },
         {
@@ -46,14 +44,15 @@
         },
         {
             start_date: new Date(Date.parse("2021-10-01")),
-            end_date: new Date(Date.parse("2022-10-01")),
+            end_date: null,
             place: "Sanic Framework (OSS project)",
             place_website: "https://sanic.dev",
-            role: "Core Developer",
+            role: "Core Developer & Steering Council",
             description: [
                 `Was invited to join the core developers team after having made several contributions to the project and offering frequent `,
                 `help to other users in the Sanic Discord server. The main contribution I made to this project while being core developer `,
-                `was making the usage of uvloop at runtime optional, which until then could only be opted out of during the installation step.`,
+                `was making the usage of uvloop at runtime optional, which until then could only be opted out of during the installation step. `,
+                `After a year, I was invited to join the project's steering council.`,
             ].join(""),
         },
         {
