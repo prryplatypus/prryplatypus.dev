@@ -28,7 +28,7 @@ jobs:
           echo ${{ github.event.repository.name }} > build/CNAME
           touch build/.nojekyll
 
-      # - name: Deploy 🚀
-      #   uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     folder: build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
