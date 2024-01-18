@@ -1,39 +1,57 @@
+@font-face {
+	font-family: vercetti-regular;
+	src: url(/assets/fonts/Vercetti-Regular.ttf);
+}
+
 :root {
-	--color-bg: #15295c;
-	--color-text: #fff;
-	--font-body: sans-serif;
-	color: var(--color-text);
-	font-family: var(--font-body);
+	--font-family: 'vercetti-regular', sans-serif;
+	--font-size-1: 1.2rem;
+	--font-size-2: 1.6rem;
+	--font-size-3: 1.8rem;
+	--font-size-4: 2.4rem;
+	--font-size-5: 4.8rem;
+	--background-color: #e0e2db;
+	--text-color: #2e3532;
 }
 
 html {
+	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
 
 body {
-	background-color: var(--color-bg);
-	min-height: 100vh;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: var(--font-family);
+	font-size: var(--font-size-2);
 	margin: 0;
 }
 
 h1,
 h2,
-h3 {
-	line-height: 1.1;
+h3,
+h4 {
+	margin: 0;
 }
 
 h1 {
-	font-size: 3rem;
-	margin-bottom: .6rem;
-	margin-top: .6rem;
+	font-size: var(--font-size-5);
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: var(--font-size-4);
 }
 
 h3 {
-	font-size: 1.2rem;
+	font-size: var(--font-size-3);
+}
+
+h4 {
+	font-size: var(--font-size-2);
+}
+
+li+li {
+	margin-top: .5em;
 }
 
 a {

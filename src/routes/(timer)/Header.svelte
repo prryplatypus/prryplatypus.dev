@@ -1,5 +1,5 @@
 <script>
-    import Clock from "$lib/components/Timer/Clock.svelte";
+    import Clock from "$lib/components/Clock.svelte";
 </script>
 
 <header>
@@ -21,15 +21,12 @@
     }
 
     .clock {
-        font-family: monospace;
         font-size: 10em;
+        font-variant-numeric: tabular-nums;
         font-weight: bold;
         text-align: center;
         overflow-x: scroll;
         max-width: 100%;
-    }
-
-    .clock {
         flex: 1;
         width: 100%;
     }
