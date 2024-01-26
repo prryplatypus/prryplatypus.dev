@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+	<link rel="preload" href="../assets/fonts/Vercetti-Regular.ttf" as="font" type="font/ttf"
+		crossorigin />
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/3.fa36c7df.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/styles.bda80e17.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/6.3fd4c67e.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Label.c8768bec.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Button.436e4f26.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.88be69c3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.93dd95e1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c4640359.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.d4edf209.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.27cdd74d.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.ec64a9c1.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/3.2dfd1e62.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/state.3931be82.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/6.95e38a05.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Label.d48b2bf2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/PageHead.f30ff5e5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Button.c75afa70.js"><title>Exams timer - Create exam</title><!-- HEAD_svelte-8qiiux_START --><meta name="description" content="Create an exam"><meta property="og:url" content="https://prryplatypus.dev"><meta property="og:type" content="website"><meta property="og:title" content="Exams timer - Create exam"><meta property="og:description" content="Create an exam"><meta property="og:image" content="https://prryplatypus.dev/assets/favicon/apple-touch-icon.png"><meta property="twitter:domain" content="prryplatypus.dev"><meta property="twitter:url" content="https://prryplatypus.dev"><meta name="twitter:title" content="Exams timer - Create exam"><meta name="twitter:description" content="Create an exam"><meta name="twitter:image" content="https://prryplatypus.dev/assets/favicon/apple-touch-icon.png"><!-- HEAD_svelte-8qiiux_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">
+
+
+<div class="app svelte-1rcwp06"><header class="svelte-1pmlsij"><div class="clock svelte-1pmlsij">05:51:52</div>
+</header>
+    
+
+<main class="svelte-g06k2g"><form class="svelte-1egonxv"><h2 class="svelte-1egonxv">Create exam</h2>
+    <label class="svelte-1dlpx2r">Exam name
+            <input type="text" name="name" placeholder="Name" required class="svelte-a5k2au">
+</label>
+        <label class="svelte-1dlpx2r">Exam duration (minutes)
+            <input type="number" name="duration" placeholder="45" min="0" step="1" required class="svelte-a5k2au">
+</label>
+
+        <div class="buttons svelte-g06k2g"><a href="/timer" class=" svelte-ej64jw">Cancel
+</a>
+            <button action="submit" type="submit" class="svelte-i6jc94">Create
+</button></div>
+</form>
+</main>
+</div>
+
+
+			
+			<script>
+				{
+					__sveltekit_16d5y1n = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.88be69c3.js"),
+						import("../_app/immutable/entry/app.27cdd74d.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>
