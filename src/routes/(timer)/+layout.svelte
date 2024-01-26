@@ -1,5 +1,4 @@
 <script>
-    import "../styles.css";
     import "./styles-timer.css";
     import { setContext } from "svelte";
     import { examState } from "$lib/components/Timer/state.js";

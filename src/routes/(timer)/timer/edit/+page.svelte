@@ -39,7 +39,11 @@
     };
 </script>
 
-<PageHead title="Exams timer - Edit exam" description="Edit an exam" />
+<PageHead
+    title="Exams timer - Edit exam"
+    description="Edit an exam"
+    keywords="Exams,Timer,Overlapping,Multiple"
+/>
 
 <main>
     <Form title="Edit exam" on:submit={doUpdateExam}>

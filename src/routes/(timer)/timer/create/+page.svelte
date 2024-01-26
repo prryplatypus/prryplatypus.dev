@@ -23,7 +23,11 @@
     };
 </script>
 
-<PageHead title="Exams timer - Create exam" description="Create an exam" />
+<PageHead
+    title="Exams timer - Create exam"
+    description="Create an exam"
+    keywords="Exams,Timer,Overlapping,Multiple"
+/>
 
 <main>
     <Form title="Create exam" on:submit={doAddExam}>
