@@ -13,6 +13,7 @@
 <PageHead
     title="Exams timer - Time multiple exams at once"
     description="Manage multiple overlapping exams at once"
+    keywords="Exams,Timer,Overlapping,Multiple"
 />
 
 <nav>

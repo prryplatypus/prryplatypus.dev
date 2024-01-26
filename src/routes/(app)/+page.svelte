@@ -6,7 +6,8 @@
 
 <PageHead
 	title="Néstor Pérez - Software Engineer"
-	description="Welcome to my website"
+	description="Néstor Pérez's personal website"
+	keywords="Python, Sanic, FastAPI, Backend"
 />
 
 <Landing />
