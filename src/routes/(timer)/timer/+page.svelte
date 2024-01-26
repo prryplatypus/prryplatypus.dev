@@ -1,34 +1,40 @@
 <script>
-    import { getContext } from "svelte";
-    import Grid from "./ExamGrid.svelte";
+    import "../../styles.css";
     import Button from "$lib/components/Button.svelte";
+    import { setContext } from "svelte";
+    import { examState } from "$lib/components/Timer/state.js";
+    import Grid from "./ExamGrid.svelte";
     import PageHead from "$lib/components/PageHead.svelte";
 
-    const { exams_store, clearExpiredExams, startPendingExams } =
-        getContext("exam_state");
+    setContext("exam_state", examState);
+    const { exams_store, clearExpiredExams, startPendingExams } = examState;
 </script>
 
 <PageHead
-    title="Exams timer - Good luck!"
+    title="Exams timer - Time multiple exams at once"
     description="Manage multiple overlapping exams at once"
 />
 
-<section class="buttons">
+<nav>
     <Button on:click={clearExpiredExams}>Clear expired</Button>
     <Button on:click={startPendingExams}>Start pending</Button>
-</section>
+    <form action="/timer/create">
+        <Button type="submit">+</Button>
+    </form>
+</nav>
 
 <Grid exams={exams_store} />
 
 <style>
-    .buttons {
+    form {
+        display: inline;
+    }
+
+    nav {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        font-size: 0.9em;
         align-items: center;
         justify-content: center;
-        margin: calc(-0.5em + 1px); /* 1px for buttons border */
-        padding-bottom: 1em;
     }
 </style>
