@@ -1,0 +1,9 @@
+@font-face {
+	font-family: vercetti-regular;
+	src: url(/assets/fonts/Vercetti-Regular.ttf);
+}
+
+:root {
+	--background-color: #15295c;
+	--text-color: #fff;
+}

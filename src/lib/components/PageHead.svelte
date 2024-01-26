@@ -2,7 +2,7 @@
     export let title = "";
     export let description = "";
     export let domain = "prryplatypus.dev";
-    export let image = "/apple-touch-icon.png";
+    export let image = "/assets/favicon/apple-touch-icon.png";
 
     let url = `https://${domain}`;
     let image_ = `${url}${image}`;

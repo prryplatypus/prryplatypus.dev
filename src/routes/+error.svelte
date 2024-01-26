@@ -24,14 +24,4 @@
         justify-content: center;
         min-height: 100vh;
     }
-
-    h1 {
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-
-    h3 {
-        margin-top: 0;
-        padding-top: 0;
-    }
 </style>

@@ -9,7 +9,7 @@
 </script>
 
 <div class="exam-card">
-    <a href="/timer/exams/edit?id={exam.id}">
+    <a href="/timer/edit?id={exam.id}">
         <h2 class="exam-name">
             {exam.name}
         </h2>
@@ -17,7 +17,7 @@
     <div class="exam-time">
         {#if exam.start_date}
             {timeFormat.format(
-                new Date(exam.start_date.getTime() + exam.duration * 60000)
+                new Date(exam.start_date.getTime() + exam.duration * 60000),
             )}
         {:else}
             &ZeroWidthSpace;
@@ -27,20 +27,20 @@
 
 <style>
     .exam-card {
-        font-size: 2em;
+        font-size: 3rem;
         margin: 1rem;
     }
 
     a {
-        color: var(--color-bg);
+        color: var(--background-color);
     }
 
     .exam-name {
         display: flex;
         border-radius: 5px 5px 0 0;
-        border: 1px solid var(--color-text);
-        background-color: var(--color-text);
-        color: var(--color-bg);
+        border: 1px solid var(--text-color);
+        background-color: var(--text-color);
+        color: var(--background-color);
         align-items: center;
         justify-content: center;
         font-size: 1.8em;
@@ -49,7 +49,7 @@
     }
 
     .exam-time {
-        border: 1px solid var(--color-text);
+        border: 1px solid var(--text-color);
         border-radius: 0 0 5px 5px;
         display: flex;
         flex-direction: column;

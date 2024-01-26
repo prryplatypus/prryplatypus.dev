@@ -1,5 +1,5 @@
 <script>
-    import Clock from "$lib/components/Timer/Clock.svelte";
+    import Clock from "$lib/components/Clock.svelte";
 </script>
 
 <header>
@@ -10,7 +10,7 @@
 
 <style>
     header {
-        background-color: var(--color-bg);
+        background-color: var(--background-color);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,17 +21,15 @@
     }
 
     .clock {
-        font-family: monospace;
-        font-size: 10em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 15rem;
+        font-variant-numeric: tabular-nums;
         font-weight: bold;
         text-align: center;
-        overflow-x: scroll;
-        max-width: 100%;
-    }
-
-    .clock {
         flex: 1;
-        width: 100%;
     }
 
     @media (max-width: 750px) {
