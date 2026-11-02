@@ -42,7 +42,7 @@
             <h2>Experience</h2>
             <div class="content">
                 <section class="item">
-                    <h3>Zayo</h3>
+                    <h3>Zayo Group</h3>
                     <ul>
                         <li>
                             <span class="item-details">
