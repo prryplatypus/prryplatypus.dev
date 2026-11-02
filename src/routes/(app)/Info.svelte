@@ -46,7 +46,7 @@
                     <ul>
                         <li>
                             <span class="item-details">
-                                <h4>Software Engineer</h4>
+                                <h4>Software Engineer (contract)</h4>
                                 <p>May 2026 - Present</p>
                             </span>
                             <p>
@@ -62,7 +62,7 @@
                     <ul>
                         <li>
                             <span class="item-details">
-                                <h4>Software Engineer</h4>
+                                <h4>Software Engineer (contract)</h4>
                                 <p>July 2023 - April 2026</p>
                             </span>
                             <p>
@@ -80,7 +80,7 @@
                     <ul>
                         <li>
                             <span class="item-details">
-                                <h4>Junior Software Engineer</h4>
+                                <h4>Junior Software Engineer (contract)</h4>
                                 <p>September 2022 - May 2023</p>
                             </span>
                             <p>
@@ -125,7 +125,7 @@
                         <li>
                             <span class="item-details">
                                 <h4>Steering Council</h4>
-                                <p>October 2022 - Present</p>
+                                <p>October 2022 - October 2024</p>
                             </span>
                             <p>
                                 Ensured the smooth operation of the community
