@@ -42,17 +42,35 @@
             <h2>Experience</h2>
             <div class="content">
                 <section class="item">
-                    <h3>Ziply Fiber</h3>
+                    <h3>Zayo</h3>
                     <ul>
                         <li>
                             <span class="item-details">
                                 <h4>Software Engineer</h4>
-                                <p>July 2023 - Present</p>
+                                <p>May 2026 - Present</p>
                             </span>
                             <p>
                                 Part of the network automation team. Working on
                                 internal APIs and tools to automate network
                                 operations.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <h3>Ziply Fiber</h3>
+                    <ul>
+                        <li>
+                            <span class="item-details">
+                                <h4>Software Engineer</h4>
+                                <p>July 2023 - April 2026</p>
+                            </span>
+                            <p>
+                                Worked on internal APIs and tooling to automate network
+                                operations. Refactored and restructured the entire automation
+                                codebase to follow basic design principles (like SOLID and DRY)
+                                and introduced best-practices such as unit testing.
+                                Designed a distributed Python workflow system: <a href="https://github.com/prryplatypus/ergate">Ergate</a>.
                             </p>
                         </li>
                     </ul>
